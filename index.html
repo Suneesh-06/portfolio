@@ -20,7 +20,7 @@
 <script src="./image-slot.js"></script>
 <style>:root{--bg:#0C0C0C;--bg2:#111111;--card:#161616;--card2:#1D1D1D;--card3:#222222;--sel:#2A2A2A;--line:#2B2A27;--line2:#403D36;--tx:#FAF7F0;--tx2:#E3DFD3;--tx3:#C4BFB0;--mut:#A19B8B;--ac:#8FB0FF;--ac2:#5C8BFF;--onac:#0C0C0C}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--tx);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}a{color:var(--ac);text-decoration:none}a:hover{color:var(--ac);text-decoration:underline}*{box-sizing:border-box}table{border-collapse:collapse}.hv-arrow{display:inline-block;transition:transform .25s ease}.hv:hover .hv-arrow,.hv:focus-visible .hv-arrow{transform:translateX(6px)}.hv-title{transition:color .2s}.hv:hover .hv-title{color:var(--ac)}.hv-img{overflow:hidden}.hv-img img{transition:transform .5s ease}.hv:hover .hv-img img{transform:scale(1.05)}.hv-row{transition:background .15s}.hv-row:hover{background:var(--card2)}@media (prefers-reduced-motion:reduce){.hv-arrow,.hv-title,.hv-img img{transition:none}.hv:hover .hv-arrow,.hv:hover .hv-img img{transform:none}}</style>
 </helmet>
-<div style="min-height:100vh;background:var(--bg);color:var(--tx);font-family:'Inter',system-ui,sans-serif">
+<div style="min-height:100vh;display:flex;flex-direction:column;background:var(--bg);color:var(--tx);font-family:'Inter',system-ui,sans-serif">
 
 <header style="position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)">
 <div style="max-width:1120px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
@@ -186,7 +186,7 @@
 </main>
 </sc-if>
 
-<footer style="border-top:1px solid var(--line)"><div style="max-width:1120px;margin:0 auto;padding:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-weight:400;font-size:12px;font-family:'Roboto Mono',monospace;color:var(--mut)"><span>Suneesh S · {{ t.role }}</span><a href="mailto:suneeshivk@yahoo.com" style="color:var(--ac)">suneeshivk@yahoo.com</a></div></footer>
+<footer style="margin-top:auto;border-top:1px solid var(--line)"><div style="max-width:1120px;margin:0 auto;padding:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-weight:400;font-size:12px;font-family:'Roboto Mono',monospace;color:var(--mut)"><span>Suneesh S · {{ t.role }}</span><a href="mailto:suneeshivk@yahoo.com" style="color:var(--ac)">suneeshivk@yahoo.com</a></div></footer>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script>
