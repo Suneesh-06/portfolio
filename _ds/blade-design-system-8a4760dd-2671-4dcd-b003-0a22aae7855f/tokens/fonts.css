@@ -1,0 +1,9 @@
+/* ============================================================
+   Blade Design System — Web Fonts
+   Brand typefaces:
+   - TASA Orbiter Display  → Display + Heading  (loaded as "TASA Orbiter" from Google Fonts)
+   - Inter                 → Body, Label, Caption
+   - Menlo (system)        → Code  (Roboto Mono loaded as fallback for non-Apple platforms)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=TASA+Orbiter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;700&display=swap');

@@ -1,0 +1,197 @@
+/* ============================================================
+   Blade Design System — Color Tokens
+   Two layers:
+   1. PALETTE (raw spectrum) — never reference directly in product UI
+   2. SEMANTIC (intent-based aliases) — use these in components
+   Values sourced from the Blade Figma "Color Spectrum" frame.
+   ============================================================ */
+
+:root {
+  /* ---------- CHROMATIC: Azure (brand / primary) ---------- */
+  --azure-050: #F0F5FF;
+  --azure-100: #D8E4FD;
+  --azure-200: #B4CDFD;
+  --azure-300: #75A3FF;
+  --azure-400: #4D7FFF;
+  --azure-500: #305EFF; /* primary brand */
+  --azure-600: #2950DA;
+  --azure-700: #2243B6;
+  --azure-800: #1B3591;
+  --azure-900: #14286D;
+  --azure-1000: #0D1A48;
+  --azure-a50:  rgba(48, 94, 255, 0.09);
+  --azure-a100: rgba(48, 94, 255, 0.18);
+  --azure-a150: rgba(48, 94, 255, 0.24);
+  --azure-a200: rgba(48, 94, 255, 0.32);
+
+  /* ---------- CHROMATIC: Emerald (positive) ---------- */
+  --emerald-050: #EBFAF3;
+  --emerald-100: #DAF5E8;
+  --emerald-200: #B6ECD1;
+  --emerald-300: #91E3BA;
+  --emerald-400: #48D08C;
+  --emerald-500: #00BE5F;
+  --emerald-600: #00A251;
+  --emerald-700: #008743;
+  --emerald-800: #006C36;
+  --emerald-900: #005128;
+  --emerald-1000: #00361B;
+  --emerald-a50:  rgba(0, 162, 81, 0.09);
+  --emerald-a100: rgba(0, 162, 81, 0.18);
+  --emerald-a150: rgba(0, 162, 81, 0.24);
+  --emerald-a200: rgba(0, 162, 81, 0.32);
+
+  /* ---------- CHROMATIC: Crimson (negative) ---------- */
+  --crimson-050: #FFF5F5;
+  --crimson-100: #FEE4E2;
+  --crimson-200: #FEC6C3;
+  --crimson-300: #FD9D96;
+  --crimson-400: #F96C62;
+  --crimson-500: #F04438;
+  --crimson-600: #D92D20;
+  --crimson-700: #B42318;
+  --crimson-800: #9A0E0E;
+  --crimson-900: #880C0C;
+  --crimson-1000: #750A0A;
+  --crimson-a50:  rgba(217, 45, 32, 0.09);
+  --crimson-a100: rgba(217, 45, 32, 0.18);
+  --crimson-a150: rgba(217, 45, 32, 0.24);
+  --crimson-a200: rgba(217, 45, 32, 0.32);
+
+  /* ---------- CHROMATIC: Cider (notice / warning) ---------- */
+  --cider-050: #FFF3EB;
+  --cider-100: #FFE1CC;
+  --cider-200: #FFC499;
+  --cider-300: #FFAC70;
+  --cider-400: #FF9040;
+  --cider-500: #FF7A1A;
+  --cider-600: #E9690C;
+  --cider-700: #C65C10;
+  --cider-800: #A24D10;
+  --cider-900: #813E0E;
+  --cider-1000: #5D2C09;
+  --cider-a50:  rgba(233, 105, 12, 0.09);
+  --cider-a100: rgba(233, 105, 12, 0.18);
+  --cider-a150: rgba(233, 105, 12, 0.24);
+  --cider-a200: rgba(233, 105, 12, 0.32);
+
+  /* ---------- CHROMATIC: Sapphire (information) ---------- */
+  --sapphire-050: #E7F6FE;
+  --sapphire-100: #CFEDFC;
+  --sapphire-200: #A8DFFA;
+  --sapphire-300: #79CEF8;
+  --sapphire-400: #57C1F6;
+  --sapphire-500: #15B0F3;
+  --sapphire-600: #1291D0;
+  --sapphire-700: #0F78AD;
+  --sapphire-800: #0C608A;
+  --sapphire-900: #094868;
+  --sapphire-1000: #063145;
+  --sapphire-a50:  rgba(18, 145, 208, 0.09);
+  --sapphire-a100: rgba(18, 145, 208, 0.18);
+  --sapphire-a150: rgba(18, 145, 208, 0.24);
+  --sapphire-a200: rgba(18, 145, 208, 0.32);
+
+  /* ---------- CHROMATIC: secondary hues ---------- */
+  --cloud-500: #387594;  --cloud-600: #1F5C7A;
+  --sea-500: #389494;    --sea-600: #1F7A7A;
+  --forest-500: #00BE6F; --forest-600: #009E5C;
+
+  /* ---------- NEUTRAL: grey scale (light surfaces) ---------- */
+  --gray-050: #F8FAFC;
+  --gray-100: #F1F5FA;
+  --gray-200: #E3EAF3;
+  --gray-300: #CBD5E2;
+  --gray-400: #B1C1D2;
+  --gray-500: #90A5BB;
+  --gray-600: #768EA7;
+  --gray-700: #6C849D;
+  --gray-800: #58728D;
+  --gray-900: #40566D;
+  --gray-1000: #2F4256;
+  --gray-1100: #243547;
+  --gray-1200: #192839;
+  --gray-1300: #0C1927;
+  --gray-a25:  rgba(108, 132, 157, 0.06);
+  --gray-a50:  rgba(108, 132, 157, 0.09);
+  --gray-a100: rgba(108, 132, 157, 0.18);
+  --gray-a200: rgba(108, 132, 157, 0.32);
+
+  --white: #FFFFFF;
+  --black: #000000;
+
+  /* ============================================================
+     SEMANTIC TOKENS (onLight) — reference these in product UI
+     ============================================================ */
+
+  /* Surfaces / page backgrounds */
+  --surface-background-gray-subtle:    #F8FAFC; /* app page */
+  --surface-background-gray-moderate:  #FFFFFF; /* cards on page */
+  --surface-background-gray-intense:   #F1F5FA;
+  --surface-background-cloud-subtle:   #F0F5FF;
+
+  /* Surface borders */
+  --surface-border-gray-muted:   #E3EAF3;
+  --surface-border-gray-subtle:  #EEF2F7;
+  --surface-border-gray-normal:  #CBD5E2;
+  --surface-border-primary-normal: var(--azure-500);
+
+  /* Text on light surfaces */
+  --surface-text-gray-normal:   #192839;
+  --surface-text-gray-muted:    #40566D;
+  --surface-text-gray-subtle:   #6C849D;
+  --surface-text-gray-disabled: #B1C1D2;
+  --surface-text-primary-normal: var(--azure-600);
+  --surface-text-static-white:  #FFFFFF;
+
+  /* Icon colors */
+  --surface-icon-gray-normal:  #40566D;
+  --surface-icon-gray-muted:   #6C849D;
+  --surface-icon-gray-subtle:  #90A5BB;
+
+  /* Interactive — Primary (buttons, links, focus) */
+  --interactive-background-primary-default:     var(--azure-500);
+  --interactive-background-primary-highlighted: var(--azure-600);
+  --interactive-background-primary-faded:       var(--azure-a50);
+  --interactive-background-primary-disabled:    var(--azure-300);
+  --interactive-text-primary-normal:    var(--azure-600);
+  --interactive-text-primary-subtle:    var(--azure-500);
+  --interactive-border-primary-default: var(--azure-500);
+
+  /* Interactive — Gray (secondary / tertiary surfaces) */
+  --interactive-background-gray-default:     var(--gray-a25);
+  --interactive-background-gray-highlighted: var(--gray-a50);
+  --interactive-border-gray-default:         var(--gray-300);
+  --interactive-border-gray-highlighted:     var(--gray-400);
+
+  /* Feedback — Positive */
+  --feedback-background-positive-subtle:  #EBFAF3;
+  --feedback-background-positive-intense: var(--emerald-600);
+  --feedback-border-positive:   var(--emerald-600);
+  --feedback-text-positive:     var(--emerald-700);
+  --feedback-icon-positive:     var(--emerald-600);
+
+  /* Feedback — Negative */
+  --feedback-background-negative-subtle:  #FFF5F5;
+  --feedback-background-negative-intense: var(--crimson-600);
+  --feedback-border-negative:   var(--crimson-600);
+  --feedback-text-negative:     var(--crimson-700);
+  --feedback-icon-negative:     var(--crimson-600);
+
+  /* Feedback — Notice */
+  --feedback-background-notice-subtle:  #FFF3EB;
+  --feedback-background-notice-intense: var(--cider-600);
+  --feedback-border-notice:   var(--cider-600);
+  --feedback-text-notice:     var(--cider-700);
+  --feedback-icon-notice:     var(--cider-600);
+
+  /* Feedback — Information */
+  --feedback-background-information-subtle:  #E7F6FE;
+  --feedback-background-information-intense: var(--sapphire-600);
+  --feedback-border-information:   var(--sapphire-600);
+  --feedback-text-information:     var(--sapphire-700);
+  --feedback-icon-information:     var(--sapphire-600);
+
+  /* Overlay (modals, drawers) */
+  --surface-overlay-background: rgba(12, 25, 39, 0.64);
+}

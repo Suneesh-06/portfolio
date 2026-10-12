@@ -1,0 +1,30 @@
+/* ============================================================
+   Blade Design System — Motion Tokens
+   Duration & easing sourced from the Blade Figma "Motion" page.
+   Pair a duration with an easing for any transition/animation.
+   ============================================================ */
+
+:root {
+  /* ---------- Duration ---------- */
+  --motion-duration-2xquick:  70ms;   /* @kind other */
+  --motion-duration-xquick:   150ms;  /* @kind other */
+  --motion-duration-quick:    200ms;  /* @kind other */
+  --motion-duration-moderate: 250ms;  /* @kind other */
+  --motion-duration-xmoderate: 300ms; /* @kind other */
+  --motion-duration-gentle:   400ms;  /* @kind other */
+  --motion-duration-xgentle:  600ms;  /* @kind other */
+  --motion-duration-2xgentle: 900ms;  /* @kind other */
+
+  /* ---------- Easing ---------- */
+  /* "effective" = snappy, for functional micro-interactions */
+  --motion-easing-standard:  cubic-bezier(0.3, 0, 0.2, 1);  /* @kind other */
+  --motion-easing-entrance:  cubic-bezier(0, 0, 0.2, 1);    /* @kind other */
+  --motion-easing-exit:      cubic-bezier(0.17, 0, 1, 1);   /* @kind other */
+  /* "revealing" = softer, for larger surfaces (drawers, sheets) */
+  --motion-easing-standard-revealing: cubic-bezier(0.5, 0, 0, 1); /* @kind other */
+  --motion-easing-entrance-revealing: cubic-bezier(0, 0, 0, 1);   /* @kind other */
+  --motion-easing-exit-revealing:     cubic-bezier(0.5, 0, 1, 1); /* @kind other */
+  /* "attentive" = playful overshoot, for emphasis */
+  --motion-easing-entrance-attentive: cubic-bezier(0.5, 0, 0.3, 1.5); /* @kind other */
+  --motion-easing-exit-attentive:     cubic-bezier(0.7, 0, 0.5, 1);   /* @kind other */
+}

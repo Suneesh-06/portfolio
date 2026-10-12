@@ -1,0 +1,39 @@
+/* ============================================================
+   Blade Design System — Object Styles
+   Border radius, border width, elevation (shadows) & opacity.
+   Sourced from the Blade Figma "Object Styles" tokens.
+   ============================================================ */
+
+:root {
+  /* ---------- Border radius ---------- */
+  --border-radius-none:    0px;
+  --border-radius-xsmall:  1px;
+  --border-radius-small:   2px;
+  --border-radius-medium:  4px;
+  --border-radius-large:   8px;
+  --border-radius-xlarge:  12px;
+  --border-radius-2xlarge: 16px;
+  --border-radius-round:   9999px;
+
+  /* ---------- Border width ---------- */
+  --border-width-none:    0px;
+  --border-width-thinner: 0.5px;
+  --border-width-thin:    1px;
+  --border-width-thick:   1.5px;
+  --border-width-thicker: 2px;
+
+  /* ---------- Elevation (shadows) ---------- */
+  --elevation-none:      none;
+  --elevation-lowRaised: 0px 1px 2px 0px rgba(12, 25, 39, 0.10);
+  --elevation-midRaised: 0px 8px 24px 0px rgba(12, 25, 39, 0.14);
+  --elevation-highRaised: 0px 16px 48px -4px rgba(12, 25, 39, 0.18);
+
+  /* ---------- Opacity ---------- */
+  --opacity-0:  0;        /* @kind other */
+  --opacity-1:  0.09;     /* @kind other */
+  --opacity-2:  0.18;     /* @kind other */
+  --opacity-3:  0.32;     /* @kind other */
+  --opacity-8:  0.56;     /* @kind other */
+  --opacity-disabled: 0.32; /* @kind other */
+  --opacity-10: 1;        /* @kind other */
+}

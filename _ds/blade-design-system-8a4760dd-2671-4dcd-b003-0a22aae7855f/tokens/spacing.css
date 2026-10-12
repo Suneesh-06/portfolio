@@ -1,0 +1,31 @@
+/* ============================================================
+   Blade Design System — Spacing, Sizing & Layout Tokens
+   Spatial scale sourced from the Blade Figma "Spatial Tokens".
+   Base unit reference: multiples used across the system.
+   ============================================================ */
+
+:root {
+  /* ---------- Spacing scale ---------- */
+  --spacing-0:  0px;
+  --spacing-1:  2px;
+  --spacing-2:  4px;
+  --spacing-3:  8px;
+  --spacing-4:  12px;
+  --spacing-5:  16px;
+  --spacing-6:  20px;
+  --spacing-7:  24px;
+  --spacing-8:  32px;
+  --spacing-9:  40px;
+  --spacing-10: 48px;
+  --spacing-11: 56px;
+
+  /* ---------- Layout containers ---------- */
+  --size-max-width-medium: 1136px;
+  --size-max-width-large:  1280px;
+
+  /* ---------- Common control heights ---------- */
+  --control-height-xsmall: 28px;
+  --control-height-small:  32px;
+  --control-height-medium: 36px;
+  --control-height-large:  48px;
+}

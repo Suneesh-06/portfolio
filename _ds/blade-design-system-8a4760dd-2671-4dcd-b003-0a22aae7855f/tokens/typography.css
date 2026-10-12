@@ -1,0 +1,97 @@
+/* ============================================================
+   Blade Design System — Typography Tokens
+   Type scale sourced from the Blade Figma "Type Scale" frame
+   (large-screen values). Display & Heading use TASA Orbiter
+   Display; Body/Caption use Inter; Code uses a monospace stack.
+   ============================================================ */
+
+:root {
+  /* ---------- Font families ---------- */
+  --font-family-display: "TASA Orbiter", "TASA Orbiter Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-heading: "TASA Orbiter", "TASA Orbiter Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-body:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-code:    "Menlo", "SF Mono", "Roboto Mono", ui-monospace, Consolas, monospace;
+
+  /* ---------- Font weights ---------- */
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+
+  /* ---------- Font size tokens ---------- */
+  --font-size-25:  10px;
+  --font-size-50:  11px;
+  --font-size-75:  12px;
+  --font-size-100: 14px;
+  --font-size-200: 16px;
+  --font-size-300: 18px;
+  --font-size-400: 20px;
+  --font-size-500: 24px;
+  --font-size-600: 32px;
+  --font-size-700: 40px;
+  --font-size-800: 48px;
+  --font-size-900: 56px;
+  --font-size-1000: 64px;
+
+  /* ---------- Line height tokens ---------- */
+  --line-height-50:  14px;
+  --line-height-75:  16px;
+  --line-height-100: 18px;
+  --line-height-200: 20px;
+  --line-height-300: 24px;
+  --line-height-400: 26px;
+  --line-height-500: 32px;
+  --line-height-600: 38px;
+  --line-height-700: 46px;
+  --line-height-800: 56px;
+  --line-height-900: 64px;
+  --line-height-1000: 70px;
+
+  /* ============================================================
+     SEMANTIC TYPE STYLES  (font / weight / size / line-height)
+     Use the grouped shorthand vars, or apply the .blade-* helper
+     classes from this file.
+     ============================================================ */
+
+  /* Display — marketing & hero */
+  --text-display-large:  var(--font-weight-bold) var(--font-size-1000)/var(--line-height-1000) var(--font-family-display);
+  --text-display-medium: var(--font-weight-bold) var(--font-size-900)/var(--line-height-900) var(--font-family-display);
+  --text-display-small:  var(--font-weight-bold) var(--font-size-800)/var(--line-height-800) var(--font-family-display);
+
+  /* Heading — product UI */
+  --text-heading-2xlarge: var(--font-weight-semibold) var(--font-size-700)/var(--line-height-700) var(--font-family-heading);
+  --text-heading-xlarge:  var(--font-weight-semibold) var(--font-size-600)/var(--line-height-600) var(--font-family-heading);
+  --text-heading-large:   var(--font-weight-semibold) var(--font-size-500)/var(--line-height-500) var(--font-family-heading);
+  --text-heading-medium:  var(--font-weight-semibold) var(--font-size-400)/var(--line-height-400) var(--font-family-heading);
+  --text-heading-small:   var(--font-weight-semibold) var(--font-size-300)/var(--line-height-300) var(--font-family-heading);
+
+  /* Body */
+  --text-body-large:  var(--font-weight-regular) var(--font-size-200)/var(--line-height-300) var(--font-family-body);
+  --text-body-medium: var(--font-weight-regular) var(--font-size-100)/var(--line-height-200) var(--font-family-body);
+  --text-body-small:  var(--font-weight-regular) var(--font-size-75)/var(--line-height-100) var(--font-family-body);
+  --text-body-xsmall: var(--font-weight-regular) var(--font-size-25)/var(--line-height-50) var(--font-family-body);
+
+  /* Caption & Code */
+  --text-caption-medium: var(--font-weight-regular) var(--font-size-50)/var(--line-height-75) var(--font-family-body);
+  --text-code-medium:    var(--font-weight-regular) var(--font-size-75)/var(--line-height-100) var(--font-family-code);
+  --text-code-small:     var(--font-weight-regular) var(--font-size-25)/var(--line-height-50) var(--font-family-code);
+}
+
+/* ---------- Type helper classes ---------- */
+.blade-display-large  { font: var(--text-display-large);  letter-spacing: -0.02em; }
+.blade-display-medium { font: var(--text-display-medium); letter-spacing: -0.02em; }
+.blade-display-small  { font: var(--text-display-small);  letter-spacing: -0.01em; }
+
+.blade-heading-2xlarge { font: var(--text-heading-2xlarge); letter-spacing: -0.01em; }
+.blade-heading-xlarge  { font: var(--text-heading-xlarge);  letter-spacing: -0.01em; }
+.blade-heading-large   { font: var(--text-heading-large); }
+.blade-heading-medium  { font: var(--text-heading-medium); }
+.blade-heading-small   { font: var(--text-heading-small); }
+
+.blade-body-large  { font: var(--text-body-large); }
+.blade-body-medium { font: var(--text-body-medium); }
+.blade-body-small  { font: var(--text-body-small); }
+.blade-body-xsmall { font: var(--text-body-xsmall); }
+
+.blade-caption { font: var(--text-caption-medium); }
+.blade-code    { font: var(--text-code-medium); }
